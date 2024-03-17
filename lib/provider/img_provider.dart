@@ -10,7 +10,7 @@ class ImgProvider with ChangeNotifier {
 
   double _values = 1.0;
   double get value => _values;
-  List<String> get value2 => images;
+  List<String> get imagess => images;
   void setValue(double val) {
     _values = val;
     notifyListeners();

@@ -29,7 +29,7 @@ class _ListImageProviderState extends State<ListImageProvider> {
               child: Consumer<ImgProvider>(builder: ((context, value, child) {
             debugPrint('TextWidget');
             return Text(
-              value.value.toStringAsFixed(0),
+              value.value.toStringAsFixed(2),
               style: myTextStyle,
             );
           }))),
@@ -65,7 +65,7 @@ class _ListImageProviderState extends State<ListImageProvider> {
                     decoration: const BoxDecoration(color: Colors.blue),
                     child: Image(
                       fit: BoxFit.fitHeight,
-                      image: NetworkImage(value.value2[value.value.round()]),
+                      image: NetworkImage(value.imagess[value.value.toInt()]),
                     ),
                   );
                 }),
